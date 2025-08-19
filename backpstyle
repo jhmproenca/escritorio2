@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'eyesome';
+     src: url('fontes/eyesome/Eyesome\ Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+}
+
+@font-face {
+    font-family: 'filena';
+     src: url('fontes/filena/Filena-SemiBold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+}
+
+@font-face {
+    font-family: 'cinzel';
+     src: url('fontes/cinzel/Cinzel-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+}
+
+:root { 
+    --cor0: #72736E;
+    --cor1: #F2F0E4;
+    --cor2: #A6A5A1;
+    --cor3: #D9D8D7;
+    --cor4: #474747;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #474747;
+}
+
+header img {
+    display: block;
+    max-height: 200px;
+    padding: 10px;
+}
+
+nav {
+    text-align: left;
+    padding: 10px 0;
+    
+}
+
+nav a {
+    font-family: 'filena';
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #72736E;
+    color: #A6A5A1;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+main section {
+    display: flex;         /* coloca os elementos lado a lado */
+    align-items: center;   /* alinha verticalmente ao centro */
+    gap: 20px;             /* espaço entre a imagem e o texto */
+}
+
+.texto {
+    max-width: 400px;
+}
+
+.imagem img{
+    max-width: 100%;  /* deixa a imagem responsiva */
+    height: auto;
+}
+
+main h1 {
+    text-align: left;
+    font-family: 'filena',var(--fonte-padrao);
+    font-size: 4em;
+    margin: 30px 0;
+    font-weight: 600;
+    font-style: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-padrao);
+    margin: 20px;
+}
+
+main p{
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+main ul {
+    margin: 0 0 0 30px;
+    list-style: inside;
+}
+
+footer {
+    background-color: #474747;
+    padding: 15px;
+    text-align: center;
+    color: #A6A5A1;
+}

@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'eyesome';
+     src: url('fontes/eyesome/Eyesome\ Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+}
+
+@font-face {
+    font-family: 'filena';
+     src: url('fontes/filena/Filena-SemiBold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+}
+
+@font-face {
+    font-family: 'cinzel';
+     src: url('fontes/cinzel/Cinzel-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column; /* coloca em coluna no mobile */
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .perfil {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+:root { 
+    --cor0: #72736E;
+    --cor1: #F2F0E4;
+    --cor2: #A6A5A1;
+    --cor3: #D9D8D7;
+    --cor4: #474747;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #72736E;
+    color: #F2F0E4;
+}
+p {
+    letter-spacing: 1px;
+}
+header {
+    background-color: #474747;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto -60px;
+}
+
+header img {
+    max-width: 100%;
+    max-height: 250px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu > a{
+    background-color: #72736E;
+    color: #D9D8D7;
+    text-decoration: none;
+    font-family: 'filena';
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    transition: 0.5s;
+    width: 200px;
+    
+}
+
+.menu > a:hover {
+    background-color: #F2F0E4;
+    color: #474747;
+}
+
+main {
+    background-color: #474747;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'cinzel';
+    font-weight: normal;
+    font-size: 2em
+}
+
+h3 {
+    font-family: 'cinzel';
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+h4{
+    font-family: 'cinzel';
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+h1 {
+    font-family: 'cinzel';
+    font-weight: normal;
+    font-size: 3em;
+    max-width: 500px;
+}
+
+main > p {
+    font-family: 'filena';
+    max-width: 500px;
+    margin: 10px;
+}
+
+main > a{
+    background-color: #72736E;
+    color: #D9D8D7;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+main > a:hover {
+    background-color: #F2F0E4;
+    color: #474747;
+}
+
+.container h2 {
+    margin: 10px 0 10px 10px;
+}
+
+.container h3 {
+    margin: 10px 0 10px 10px;
+}
+
+.sobre {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.sobre > p {
+    text-align: justify;
+    font-family: 'filena';
+    text-indent: 20px;
+    font-weight: normal;
+    max-width: 100%;
+}
+
+.sobre ul{
+    font-family: 'filena';
+    list-style: none;
+}
+.equipe{
+    justify-content: center;
+    background-color: #000000;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.equipe h2 {
+    margin: 10px 0 10px 10px;
+}
+
+.descricaoequipe {
+    max-width: 900px;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.perfil {
+  display: flex;         /* coloca os elementos lado a lado */
+  gap: 20px;  
+  align-items: center; 
+  margin: 30px auto;       
+}
+
+.perfil h3 {
+    text-align: right;
+    width: 100%;
+}
+
+.apresentacao {
+    text-indent: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 15px;
+    font-size: 1.3em;
+    max-width: 400px;
+    width: 100%;
+}
+
+.imagem img {
+    max-width: 400px; /* Ajuste conforme necessário */
+    width: 100%;
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+}
+
