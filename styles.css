@@ -23,7 +23,7 @@
 @media (max-width: 600px) {
   .container {
     flex-direction: column; /* coloca em coluna no mobile */
-    text-align: center;
+    text-align: flex-start;
   }
 }
 
@@ -32,14 +32,14 @@
     flex-direction: column;
     align-items: flex-start;
   }
-}
 
-@media (max-width: 600px) {
-  .menu {
+  .diferencial {
     flex-direction: column;
     align-items: flex-start;
   }
 }
+
+
 
 :root { 
     --cor0: #72736E;
@@ -56,14 +56,15 @@
 }
 
 body {
-    background-color: #72736E;
+    background-color: #A6A5A1;
     color: #F2F0E4;
 }
 p {
     letter-spacing: 1px;
+    line-height: 1.5;
 }
 header {
-    background-color: #474747;
+    background-color: #000000;
     max-width: 1000px;
     padding: 20px;
     margin: 0 auto -60px;
@@ -80,8 +81,8 @@ header img {
 }
 
 .menu > a{
-    background-color: #72736E;
-    color: #D9D8D7;
+   
+    color: #000000;
     text-decoration: none;
     font-family: 'filena';
     text-align: center;
@@ -89,26 +90,34 @@ header img {
     padding: 10px;
     border-radius: 7px;
     transition: 0.5s;
-    width: 200px;
+    max-width: 200px;
     
 }
 
 .menu > a:hover {
-    background-color: #F2F0E4;
-    color: #474747;
+    background-color: #474747;
+    color: #72736E;
 }
 
 main {
-    background-color: #474747;
+    background-color: #F2F0E4;
     max-width: 1000px;
     padding: 20px;
     margin: auto;
 }
 
+h1 {
+    font-family: 'cinzel';
+    font-weight: normal;
+    font-size: 3em;
+    max-width: 500px;
+    color: #000000;
+}
+
 h2 {
     font-family: 'cinzel';
     font-weight: normal;
-    font-size: 2em
+    font-size: 2em;
 }
 
 h3 {
@@ -123,28 +132,12 @@ h4{
     font-size: 1.1em;
 }
 
-h1 {
-    font-family: 'cinzel';
-    font-weight: normal;
-    font-size: 3em;
-    max-width: 500px;
-}
-
 main > p {
-    font-family: 'filena';
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 500px;
     margin: 10px;
 }
 
-main > a{
-    background-color: #72736E;
-    color: #D9D8D7;
-    text-decoration: none;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 7px;
-    transition: 0.5s;
-}
 
 main > a:hover {
     background-color: #F2F0E4;
@@ -153,6 +146,7 @@ main > a:hover {
 
 .container h2 {
     margin: 10px 0 10px 10px;
+    color: #000000;
 }
 
 .container h3 {
@@ -163,12 +157,12 @@ main > a:hover {
     max-width: 900px;
     width: 100%;
     margin: auto;
-    
+    color: #000000;
 }
 
 .sobre > p {
     text-align: justify;
-    font-family: 'filena';
+    font-family: Arial, Helvetica, sans-serif;
     text-indent: 20px;
     font-weight: normal;
     max-width: 100%;
@@ -226,3 +220,32 @@ main > a:hover {
     border-radius: 8px; /* Opcional: bordas arredondadas */
 }
 
+.diferencial {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+.diferencial div{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.diferencial h3{
+    margin-bottom: 20px;
+}
+
+div h2{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+    margin-bottom: 10px;
+}
