@@ -241,7 +241,7 @@ main > a:hover {
     margin-bottom: 20px;
 }
 
-div h2{
+article > h2{
     max-width: 1000px;
     margin: auto;
     text-align: center;
@@ -249,3 +249,4 @@ div h2{
     padding: 20px;
     margin-bottom: 10px;
 }
+
