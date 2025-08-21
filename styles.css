@@ -23,7 +23,7 @@
 @media (max-width: 600px) {
   .container {
     flex-direction: column; /* coloca em coluna no mobile */
-    text-align: flex-start;
+    align-items: flex-start;
   }
 }
 
@@ -33,7 +33,8 @@
     align-items: flex-start;
   }
 
-  .diferencial {
+  .diferencial ,
+  .clientes{
     flex-direction: column;
     align-items: flex-start;
   }
@@ -96,7 +97,6 @@ header img {
     text-decoration: none;
     font-family: 'filena';
     text-align: center;
-    margin: 10px;
     padding: 10px;
     border-radius: 7px;
     transition: 0.5s;
@@ -127,8 +127,11 @@ main > h1 {
 
 h2 {
     font-family: 'cinzel';
-    font-weight: normal;
-    font-size: 2em;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 h3 {
@@ -158,7 +161,6 @@ main > a:hover {
 .container h2 {
     color: #000000;
     text-align: center;
-    text-decoration: underline;
     margin: 30px 0;
 }
 
@@ -195,7 +197,6 @@ main > a:hover {
 
 .equipe h2 {
     margin: 10px 0 10px 10px;
-    text-decoration: underline;
     text-align: center;
     font-size: 2.5em;
 }
@@ -244,6 +245,10 @@ article {
     margin: auto;
 }
 
+article p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .diferencial {
     max-width: 900px;
     margin: auto;
@@ -269,9 +274,35 @@ article > h2{
     max-width: 1000px;
     margin: auto;
     text-align: center;
-    text-decoration: underline;
     padding: 20px;
     margin-bottom: 10px;
+}
+
+.serviços {
+    max-width: 900px;
+    margin: auto;
+}
+
+.serviços h3 {
+    margin: 10px;
+}
+
+.clientes  {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+}
+
+.clientes div {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: justify;
+
 }
 
 footer {
@@ -280,6 +311,11 @@ footer {
     padding: 20px;
     display: flex;
     margin: auto;
+}
+
+footer h2{
+    margin: 0 0 10px 0;
+    padding: 0;
 }
 
 footer div {
